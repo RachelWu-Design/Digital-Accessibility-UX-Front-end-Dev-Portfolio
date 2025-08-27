@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rachel Anyanwu">
+    <meta name="description" content="Professional accessibility portfolio demonstrating expertise in UX Design, digital accessibility guidance, remediation, audits, and training materials">
+    <title>Digital Accessibility Portfolio - Rachel Anyanwu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .contact-info span {
+            background: rgba(255,255,255,0.1);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        main {
+            display: grid;
+            gap: 30px;
+        }
+        
+        section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #34495e;
+            font-size: 1.3rem;
+            margin: 20px 0 15px 0;
+        }
+        
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .work-item {
+            background: white;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .work-item h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .skill-category {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 3px solid #e74c3c;
+        }
+        
+        .skill-category h4 {
+            color: #c0392b;
+            margin-bottom: 8px;
+        }
+        
+        ul {
+            margin: 10px 0 10px 20px;
+        }
+        
+        li {
+            margin: 5px 0;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+        
+        .portfolio-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .portfolio-link {
+            background: #3498db;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .portfolio-link:hover, .portfolio-link:focus {
+            background: #2980b9;
+            text-decoration: underline;
+        }
+        
+        .compliance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .compliance-item {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 3px solid #27ae60;
+            text-align: center;
+        }
+        
+        .tools-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .tool-category {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            border-top: 3px solid #9b59b6;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            section {
+                padding: 20px;
+            }
+        }
+        
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            body {
+                background: white;
+                color: black;
+            }
+            
+            section {
+                background: white;
+                border: 2px solid black;
+            }
+        }
+        
+        /* Focus indicators */
+        a:focus, button:focus {
+            outline: 2px solid #3498db;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <h1>Rachel Anyanwu</h1>
+        <p class="subtitle">Digital Accessibility Specialist & Accessibility Navigator</p>
+        <p>Demonstrable Portfolio of UX Design, Accessibility Guidance, Remediation, Audits & Training</p>
+        <div class="contact-info">
+            <span>Email: rachel.anyanwu@gmail.com</span>
+            <span>Location: Greater NYC Metro Area</span>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        <section>
+            <h2>Professional Summary</h2>
+            <p>Experienced Digital Accessibility Specialist with demonstrated expertise in providing UX Design, accessibility guidance, conducting comprehensive audits, implementing remediation solutions, and developing training materials for diverse digital platforms. Proven track record of ensuring ADA, Section 508, and WCAG 2.1 AA compliance across municipal operations.</p>
+            
+            <div class="highlight">
+                <strong>Core Competencies:</strong> Accessibility assessments and audits, PDF remediation, comprehensive training development, error documentation and solution implementation, assistive technology testing, and compliance strategy development.
+            </div>
+        </section>
+        
+        <section>
+            <h2>Accessibility Work Examples</h2>
+            
+            <div class="work-grid">
+                <div class="work-item">
+                    <h4>Comprehensive Staff Training Program</h4>
+                    <p>Developed beginner-friendly accessibility guides covering Microsoft Office, Google Workspace, Adobe PDF, virtual meetings, social media, and email communications. Created step-by-step instructions with practical examples and compliance checklists.</p>
+                    <p><strong>Impact:</strong> Enabled organization-wide accessibility implementation across all digital platforms.</p>
+                </div>
+                
+                <div class="work-item">
+                    <h4>Municipal Website Accessibility Redesign</h4>
+                    <p>Led complete accessibility overhaul of DEI website section, implementing collapsible navigation menus to reduce cognitive load for screen reader users and resolving programmatic accessibility errors identified during assessment.</p>
+                    <p><strong>Tools Used:</strong> User research, assistive technology testing, HTML/CSS implementation</p>
+                </div>
+                
+                <div class="work-item">
+                    <h4>Digital Accessibility Initiative Strategic Plan</h4>
+                    <p>Authored comprehensive 12-section strategic plan establishing formal accessibility review processes, governance structures, staff training programs, and compliance monitoring systems for municipal operations.</p>
+                    <p><strong>Features:</strong> Emergency communications protocols, vendor management procedures, community engagement frameworks</p>
+                </div>
+                
+                <div class="work-item">
+                    <h4>Accessibility Decision Tree Tool</h4>
+                    <p>Created visual decision-making framework to guide content creators through accessibility best practices for different document formats, media types, and platforms. Includes format selection guidance and compliance checkpoints.</p>
+                    <p><strong>Application:</strong> Streamlined accessibility implementation across departments</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Technical Expertise & Tools</h2>
+            
+            <div class="tools-section">
+                <div class="tool-category">
+                    <h4>Assessment & Auditing</h4>
+                    <ul>
+                        <li>WCAG 2.1 AA compliance evaluation</li>
+                        <li>Section 508 auditing</li>
+                        <li>ADA Title II assessment</li>
+                        <li>WAVE Web Accessibility Evaluation</li>
+                        <li>Microsoft Accessibility Checker</li>
+                        <li>Adobe Acrobat Accessibility Tools</li>
+                    </ul>
+                </div>
+                
+                <div class="tool-category">
+                    <h4>Assistive Technology Testing</h4>
+                    <ul>
+                        <li>NVDA Screen Reader</li>
+                        <li>JAWS Screen Reader</li>
+                        <li>VoiceOver (macOS/iOS)</li>
+                        <li>Keyboard navigation testing</li>
+                        <li>Voice recognition software</li>
+                        <li>Color contrast analysis</li>
+                    </ul>
+                </div>
+                
+                <div class="tool-category">
+                    <h4>Document Remediation</h4>
+                    <ul>
+                        <li>PDF accessibility tagging</li>
+                        <li>Microsoft Office accessibility features</li>
+                        <li>Google Workspace accessibility tools</li>
+                        <li>HTML/CSS semantic markup</li>
+                        <li>Alt text optimization</li>
+                        <li>Reading order correction</li>
+                    </ul>
+                </div>
+                
+                <div class="tool-category">
+                    <h4>Training & Documentation</h4>
+                    <ul>
+                        <li>Accessibility guide development</li>
+                        <li>Staff training program design</li>
+                        <li>Process documentation</li>
+                        <li>Compliance checklist creation</li>
+                        <li>Best practices documentation</li>
+                        <li>Error tracking and resolution</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Demonstrated Accessibility Guidance</h2>
+            
+            <h3>Multi-Platform Accessibility Implementation</h3>
+            <div class="skills-list">
+                <div class="skill-category">
+                    <h4>Document Accessibility</h4>
+                    <ul>
+                        <li>Proper heading structure implementation</li>
+                        <li>Alternative text for images and graphics</li>
+                        <li>Color contrast optimization</li>
+                        <li>Accessible table design</li>
+                        <li>Descriptive hyperlink creation</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Digital Communications</h4>
+                    <ul>
+                        <li>Accessible email newsletter design</li>
+                        <li>Social media accessibility best practices</li>
+                        <li>Virtual meeting accommodation protocols</li>
+                        <li>Captioning and transcript requirements</li>
+                        <li>Multi-language accessibility considerations</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Web Content Accessibility</h4>
+                    <ul>
+                        <li>POUR principles implementation</li>
+                        <li>Semantic HTML structure</li>
+                        <li>Keyboard navigation optimization</li>
+                        <li>Screen reader compatibility</li>
+                        <li>Responsive design accessibility</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Live Portfolio Examples</h2>
+            <p>Interactive demonstrations of accessibility implementation and web development skills:</p>
+            
+            <div class="portfolio-links">
+                <a href="https://codepen.io/Rachel-Anyanwu/full/MYwQQeQ" class="portfolio-link" target="_blank" rel="noopener">
+                    Stamford DEI Website Prototype
+                </a>
+                <a href="#" class="portfolio-link">
+                    Figma Accessibility Designs
+                </a>
+                <a href="#" class="portfolio-link">
+                    Lovable Development Projects
+                </a>
+            </div>
+            
+            <div class="highlight">
+                <p><strong>Featured Project:</strong> The DEI website prototype demonstrates practical implementation of accessibility improvements including collapsible navigation menus that reduce cognitive load for screen reader users, resolution of programmatic errors, and user-centered design based on feedback from individuals with disabilities.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Compliance & Legal Expertise</h2>
+            
+            <div class="compliance-grid">
+                <div class="compliance-item">
+                    <h4>ADA Title II</h4>
+                    <p>Municipal digital content accessibility requirements</p>
+                </div>
+                
+                <div class="compliance-item">
+                    <h4>Section 508</h4>
+                    <p>Federal accessibility standards for government technology</p>
+                </div>
+                
+                <div class="compliance-item">
+                    <h4>WCAG 2.1 AA</h4>
+                    <p>Web Content Accessibility Guidelines implementation</p>
+                </div>
+                
+                <div class="compliance-item">
+                    <h4>DOJ 2024 Rule</h4>
+                    <p>Updated federal requirements for digital accessibility</p>
+                </div>
+                
+                <div class="compliance-item">
+                    <h4>NYS Accessibility</h4>
+                    <p>New York State digital accessibility requirements</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Training Materials Development</h2>
+            
+            <h3>Comprehensive Training Program Components</h3>
+            <ul>
+                <li><strong>Beginner-Friendly Accessibility Guide:</strong> Multi-platform guide covering Microsoft Office, Google Workspace, Adobe PDF, virtual meetings, social media, and email accessibility</li>
+                <li><strong>Step-by-Step Implementation Instructions:</strong> Detailed procedures for adding headings, alt text, color contrast checking, and running accessibility checkers</li>
+                <li><strong>Accessibility Decision Tree:</strong> Visual workflow tool for choosing appropriate formats and implementing accessibility features</li>
+                <li><strong>Best Practices Documentation:</strong> Comprehensive guidelines covering all aspects of digital accessibility for government operations</li>
+                <li><strong>Compliance Checklists:</strong> Practical tools for ensuring accessibility requirements are met before content publication</li>
+            </ul>
+            
+            <h3>Training Delivery Methods</h3>
+            <ul>
+                <li>Interactive workshops and presentations</li>
+                <li>Hands-on accessibility tool training</li>
+                <li>Department-specific guidance sessions</li>
+                <li>One-on-one accessibility consultations</li>
+                <li>Documentation and resource development</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Process Documentation & Solution Implementation</h2>
+            
+            <h3>Systematic Approach to Accessibility</h3>
+            <div class="work-item">
+                <h4>Error Documentation and Resolution Process</h4>
+                <ul>
+                    <li>Comprehensive accessibility auditing using multiple tools and methods</li>
+                    <li>Systematic error categorization and priority assignment</li>
+                    <li>Solution development with step-by-step remediation instructions</li>
+                    <li>Implementation verification and follow-up testing</li>
+                    <li>Documentation of lessons learned and best practices</li>
+                </ul>
+            </div>
+            
+            <div class="work-item">
+                <h4>Quality Assurance Framework</h4>
+                <ul>
+                    <li>Pre-publication accessibility review protocols</li>
+                    <li>Multi-stage testing with various assistive technologies</li>
+                    <li>User testing with individuals with disabilities</li>
+                    <li>Continuous monitoring and improvement processes</li>
+                    <li>Emergency accessibility procedures for urgent communications</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Professional Impact & Results</h2>
+            
+            <div class="highlight">
+                <h3>Measurable Accessibility Improvements</h3>
+                <ul>
+                    <li><strong>Comprehensive Training Implementation:</strong> Developed organization-wide accessibility training covering all major digital platforms and tools</li>
+                    <li><strong>Website Accessibility Enhancement:</strong> Successfully redesigned municipal website sections to eliminate programmatic errors and improve user experience for individuals with disabilities</li>
+                    <li><strong>Strategic Planning Leadership:</strong> Created detailed accessibility initiative plan with formal governance structures and compliance monitoring systems</li>
+                    <li><strong>Process Standardization:</strong> Established systematic approaches to accessibility review, testing, and implementation across multiple departments</li>
+                    <li><strong>Community Engagement:</strong> Incorporated user feedback from individuals with disabilities to inform accessibility improvements and solutions</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer style="text-align: center; margin-top: 40px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
+        <p><strong>Rachel Anyanwu - Digital Accessibility Portfolio</strong></p>
+        <p>Demonstrating expertise in accessibility guidance, remediation, audits, and training materials</p>
+        <p>Prepared for UX Design, Assistive Tech, and Digital Accessibility Positions</p>
+    </footer>
+</body>
+</html>
