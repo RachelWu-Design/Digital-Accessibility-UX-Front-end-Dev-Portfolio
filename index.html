@@ -28,65 +28,89 @@
       transform: translateY(-5px);
       box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     }
+    .availability-banner {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      animation: subtle-pulse 3s ease-in-out infinite;
+    }
+    @keyframes subtle-pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.95; }
+    }
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
 
-  <!-- Navigation -->
-  <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-lg">
+  <a href="#approach" 
+     class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:bg-white focus:text-blue-700 focus:font-semibold focus:rounded-lg focus:shadow-md">
+    Skip to Main Content
+  </a>
+
+  <div class="availability-banner text-white py-3 text-center sticky top-0 z-50 shadow-lg" role="banner">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-2">
+      <p class="text-sm md:text-base font-medium">
+        ✨ <strong>Available for Full-Time Remote Opportunities</strong> | Digital Accessibility & UX Design Specialist
+      </p>
+      <a href="#contact" 
+         class="bg-white text-purple-700 px-6 py-2 rounded-full font-semibold hover:bg-purple-50 transition-colors text-sm whitespace-nowrap">
+        Let's Connect →
+      </a>
+    </div>
+  </div>
+
+  <nav class="sticky top-12 z-40 bg-white/90 backdrop-blur-md shadow-lg">
     <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
       <div>
         <h1 class="text-2xl font-bold gradient-text">Rachel Anyanwu</h1>
-        <p class="text-sm text-gray-600">Digital Accessibility | UX Design & Research | Front-End Development</p>
+        <p class="text-sm text-gray-600">Digital Accessibility | UX Design & Research</p>
       </div>
-      <ul class="flex space-x-6 text-sm font-medium">
-        <li><a href="#approach" class="text-blue-700 hover:text-purple-600 transition-colors">Approach</a></li>
-        <li><a href="#strategic" class="text-blue-700 hover:text-purple-600 transition-colors">Strategic Work</a></li>
-        <li><a href="#systems" class="text-blue-700 hover:text-purple-600 transition-colors">Systems Work</a></li>
-        <li><a href="#portfolio" class="text-blue-700 hover:text-purple-600 transition-colors">Portfolio</a></li>
-        <li><a href="#credentials" class="text-blue-700 hover:text-purple-600 transition-colors">Credentials</a></li>
-        <li><a href="#contact" class="text-blue-700 hover:text-purple-600 transition-colors">Contact</a></li>
-      </ul>
+     <ul class="flex space-x-6 text-sm font-medium">
+  <li><a href="#approach" class="text-blue-700 hover:text-purple-600 transition-colors">Approach</a></li>
+  <li><a href="#testimonials" class="text-blue-700 hover:text-purple-600 transition-colors">Testimonials</a></li>
+  <li><a href="#strategic" class="text-blue-700 hover:text-purple-600 transition-colors">Strategic Work</a></li>
+  <li><a href="#systems" class="text-blue-700 hover:text-purple-600 transition-colors">Systems Work</a></li>
+  <li><a href="#portfolio" class="text-blue-700 hover:text-purple-600 transition-colors">Portfolio</a></li>
+  <li><a href="#skills" class="text-blue-700 hover:text-purple-600 transition-colors">Skills</a></li>
+  <li><a href="#credentials" class="text-blue-700 hover:text-purple-600 transition-colors">Credentials</a></li>
+  <li><a href="#about" class="text-blue-700 hover:text-purple-600 transition-colors">About</a></li>
+  <li><a href="#contact" class="text-blue-700 hover:text-purple-600 transition-colors">Contact</a></li>
+</ul>
     </div>
   </nav>
 
-  <!-- Hero Section -->
   <section class="relative bg-gradient-to-br from-indigo-100 via-purple-50 to-pink-100 py-20">
     <div class="max-w-6xl mx-auto px-4">
       <div class="text-center mb-12">
-<h2 class="text-5xl font-bold gradient-text mb-6 py-2">Building Systems That Restore Trust</h2>        <p class="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-          I specialize in <strong>trauma-informed accessibility</strong> that bridges municipal systems, university platforms, and community networks — creating lasting change for disabled, multicultural, and ethnically diverse communities.
+        <h2 class="text-5xl font-bold gradient-text mb-6 py-2">Building Systems That Restore Trust</h2>
+        <p class="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+          I specialize in <strong>trauma-informed accessibility</strong> that bridges municipal systems, university platforms, and community networks; creating lasting change for disabled, multicultural, and ethnically diverse communities.
         </p>
       </div>
       
-      <!-- Impact Metrics -->
       <div class="grid md:grid-cols-4 gap-6 mt-16">
         <div class="text-center">
-          <div class="impact-number">89%</div>
-          <p class="text-gray-700 font-medium">Accuracy Rate in Accessibility Assessments</p>
+          <div class="impact-number">93%</div>
+          <p class="text-gray-700 font-medium">WCAG 2.1 AA Compliance Achieved</p>
         </div>
         <div class="text-center">
-          <div class="impact-number">80%</div>
-          <p class="text-gray-700 font-medium">Reduction in Digital Barriers</p>
+          <div class="impact-number">3,000+</div>
+          <p class="text-gray-700 font-medium">Inaccessible Documents Identified</p>
         </div>
         <div class="text-center">
-          <div class="impact-number">45+</div>
-          <p class="text-gray-700 font-medium">Government Documents Remediated</p>
+          <div class="impact-number">28K+</div>
+          <p class="text-gray-700 font-medium">Residents with Disabilities Served</p>
         </div>
         <div class="text-center">
-          <div class="impact-number">30%</div>
-          <p class="text-gray-700 font-medium">Increase in Website Engagement</p>
+          <div class="impact-number">75%</div>
+          <p class="text-gray-700 font-medium">Reduction in Digital Access Complaints</p>
         </div>
       </div>
     </div>
 
-    <!-- Floating Elements -->
     <div class="absolute top-20 left-10 w-20 h-20 rounded-full bg-blue-200 opacity-60 animate-pulse"></div>
     <div class="absolute bottom-20 right-10 w-16 h-16 rounded-full bg-purple-200 opacity-60 animate-pulse"></div>
     <div class="absolute top-1/2 right-1/4 w-12 h-12 rounded-full bg-pink-200 opacity-60 animate-pulse"></div>
   </section>
 
-  <!-- Trauma-Informed Approach Section -->
   <section id="approach" class="max-w-6xl mx-auto px-4 py-16">
     <div class="bg-white rounded-2xl shadow-xl p-8 floating-card">
       <h2 class="text-3xl font-bold gradient-text mb-8 text-center">🧭 My Trauma-Informed Approach</h2>
@@ -128,30 +152,58 @@
     </div>
   </section>
 
-  <!-- Systems Impact Section -->
+  <section id="testimonials" class="bg-gradient-to-r from-purple-50 to-pink-50 py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold gradient-text mb-12 text-center">💬 What People Are Saying</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl shadow-lg p-6 floating-card">
+          <div class="text-center mb-4">
+            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-3"><span class="text-2xl">👁️</span></div>
+            <h3 class="font-semibold text-purple-700">Community Member</h3>
+            <p class="text-xs text-gray-600">Blind Stamford Resident</p>
+          </div>
+          <p class="text-sm text-gray-700 mb-4 leading-relaxed italic">
+            "I'm not used to things being accessible... usually people don't use proper formatting and styles, but Rachel does. Her work has helped me have more independence to access information without needing help."
+          </p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 floating-card">
+          <div class="text-center mb-4">
+            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-3"><span class="text-2xl">🏛️</span></div>
+            <h3 class="font-semibold text-purple-700">DEI Director</h3>
+            <p class="text-xs text-gray-600">City of Stamford</p>
+          </div>
+          <p class="text-sm text-gray-700 mb-4 leading-relaxed italic">
+            "You added so much value to our team... we'll definitely offer rave reviews for you, 'cause you truly, truly added so much value to the team. We could not have done so many things without you."
+          </p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 floating-card">
+          <div class="text-center mb-4">
+            <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mx-auto mb-3"><span class="text-2xl">⭐</span></div>
+            <h3 class="font-semibold text-purple-700">Andrea Ferguson</h3>
+            <p class="text-xs text-gray-600">President, AndiSites Inc.</p>
+          </div>
+          <p class="text-sm text-gray-700 mb-4 leading-relaxed italic">
+            "I was completely and thoroughly impressed by you... You are extraordinary... Anyone would be highly blessed to have you on their team."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
   <section id="systems" class="bg-gradient-to-r from-blue-50 to-purple-50 py-16">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-3xl font-bold gradient-text mb-12 text-center">🏛️ Systems Transformation Work</h2>
-      
       <div class="grid md:grid-cols-2 gap-8">
-        <!-- Municipal Systems -->
         <div class="bg-white rounded-xl shadow-lg p-8 floating-card">
           <div class="flex items-center mb-4">
-            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
-              <span class="text-2xl">🏛️</span>
-            </div>
+            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4"><span class="text-2xl">🏛️</span></div>
             <h3 class="text-xl font-bold text-blue-800">Municipal Systems</h3>
           </div>
-          
           <div class="mb-6">
             <h4 class="font-semibold text-purple-700 mb-2">City of Stamford Transformation</h4>
-            <p class="text-gray-700 text-sm mb-3">
-              <strong>Role:</strong> UX Accessibility Coordinator & Inclusive Design Lead
-            </p>
-            <p class="text-gray-700 mb-4">
-              Led comprehensive accessibility overhaul for the Office of I.D.E.A.S., creating the city's first trauma-informed digital accessibility framework.
-            </p>
-            
+            <p class="text-gray-700 text-sm mb-3"><strong>Role:</strong> UX Accessibility Coordinator & Inclusive Design Lead</p>
+            <p class="text-gray-700 mb-4">Led comprehensive accessibility overhaul for the Office of I.D.E.A.S., creating the city's first trauma-informed digital accessibility framework.</p>
             <div class="bg-gray-50 p-4 rounded-lg mb-4">
               <h5 class="font-medium text-gray-800 mb-2">Measurable Impact:</h5>
               <ul class="text-sm text-gray-700 space-y-1">
@@ -162,30 +214,17 @@
                 <li>• Reduced citizen complaints about digital access by 75%</li>
               </ul>
             </div>
-            
-            <a href="https://cdpn.io/pen/debug/bNVVwLG?authentication_hash=LDkmdWoZaYLAok" 
-               target="_blank" 
-               class="inline-block bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors text-sm font-medium">
-              View Digital Accessibility Toolkit →
-            </a>
+            <a href="https://cdpn.io/pen/debug/bNVVwLG?authentication_hash=LDkmdWoZaYLAok" target="_blank" class="inline-block bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors text-sm font-medium">View Digital Accessibility Toolkit →</a>
           </div>
         </div>
-
-        <!-- University & Education -->
         <div class="bg-white rounded-xl shadow-lg p-8 floating-card">
           <div class="flex items-center mb-4">
-            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
-              <span class="text-2xl">🎓</span>
-            </div>
+            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4"><span class="text-2xl">🎓</span></div>
             <h3 class="text-xl font-bold text-blue-800">Educational Platforms</h3>
           </div>
-          
           <div class="mb-6">
             <h4 class="font-semibold text-purple-700 mb-2">University-Wide Audits</h4>
-            <p class="text-gray-700 mb-4">
-              Conducted comprehensive accessibility assessments for university digital platforms, focusing on student service equity and academic access.
-            </p>
-            
+            <p class="text-gray-700 mb-4">Conducted comprehensive accessibility assessments for university digital platforms, focusing on student service equity and academic access.</p>
             <div class="bg-gray-50 p-4 rounded-lg mb-4">
               <h5 class="font-medium text-gray-800 mb-2">Key Achievements:</h5>
               <ul class="text-sm text-gray-700 space-y-1">
@@ -198,17 +237,13 @@
           </div>
         </div>
       </div>
-
-      <!-- Community Networks -->
       <div class="mt-8 bg-white rounded-xl shadow-lg p-8 floating-card">
         <div class="flex items-center mb-6">
-          <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mr-4">
-            <span class="text-2xl">🤝</span>
-          </div>
+          <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mr-4"><span class="text-2xl">🤝</span></div>
           <h3 class="text-xl font-bold text-blue-800">Community & Healthcare Systems Experience</h3>
         </div>
         
-        <div class="grid md:grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div>
             <h4 class="font-semibold text-purple-700 mb-2">Healthcare IT Background</h4>
             <p class="text-sm text-gray-700 mb-2">Licensed Pharmacy Technician with 4+ years experience in Medicaid claims processing, prior authorization workflows, and provider systems.</p>
@@ -224,111 +259,29 @@
             <p class="text-sm text-gray-700 mb-2">48in48 volunteer creating accessible websites for organizations serving diverse communities.</p>
             <p class="text-xs text-gray-500">Impact: 3 organizations, 1000+ community members reached</p>
           </div>
+          <div>
+            <h4 class="font-semibold text-purple-700 mb-2">Knowbility Air-Rally</h4>
+            <p class="text-sm text-gray-700 mb-2">Served as a <strong>Screen Reader Testing Specialist</strong> for the Accessibility Internet Rally (AIR), auditing the website for <strong>Sight Loss Services Inc.</strong></p>
+            <p class="text-xs text-gray-500">Impact: Conducted WCAG 2.2 audits to identify and document accessibility barriers for a visually impaired user base.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Strategic Initiatives Section -->
   <section id="strategic" class="max-w-6xl mx-auto px-4 py-16">
     <div class="bg-white rounded-2xl shadow-xl p-8 floating-card">
       <h2 class="text-3xl font-bold gradient-text mb-8 text-center">📋 Strategic Initiatives & Policy Development</h2>
-      
       <div class="grid md:grid-cols-1 gap-8">
         <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl">
           <h3 class="text-xl font-semibold text-blue-800 mb-4">Organizational Accessibility Framework Development</h3>
-          <p class="text-gray-700 mb-4">
-            Authored comprehensive analysis of accessibility collaboration gaps within municipal government structures, identifying systemic barriers between departments, roles, and stakeholder groups.
-          </p>
-          
-          <div class="grid md:grid-cols-2 gap-6">
-            <div>
-              <h4 class="font-semibold text-purple-700 mb-2">Research & Analysis</h4>
-              <ul class="text-sm text-gray-700 space-y-1">
-                <li>• Stakeholder mapping across IT, legal, DEI, and community advisory groups</li>
-                <li>• Gap analysis between credentialed expertise and lived experience</li>
-                <li>• Vendor relationship assessment and coordination challenges</li>
-                <li>• Historical context analysis of accessibility implementation</li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="font-semibold text-purple-700 mb-2">Strategic Solutions</h4>
-              <ul class="text-sm text-gray-700 space-y-1">
-                <li>• Cross-departmental collaboration frameworks</li>
-                <li>• Role definition matrices with clear responsibilities</li>
-                <li>• Documentation systems for accountability</li>
-                <li>• Training protocols for technical implementation</li>
-              </ul>
-            </div>
-          </div>
+          <p class="text-gray-700 mb-4">Authored comprehensive analysis of accessibility collaboration gaps within municipal government structures, identifying systemic barriers between departments, roles, and stakeholder groups.</p>
         </div>
-        
         <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-xl">
           <h3 class="text-xl font-semibold text-blue-800 mb-4">Municipal Digital Accessibility Policy Framework</h3>
-          <p class="text-gray-700 mb-4">
-            Designed comprehensive digital accessibility initiative plan for municipal implementation, establishing governance structures, review processes, and compliance monitoring systems.
-          </p>
-          
-          <div class="grid md:grid-cols-3 gap-4">
-            <div>
-              <h4 class="font-semibold text-purple-700 mb-2">Governance Structure</h4>
-              <ul class="text-sm text-gray-700 space-y-1">
-                <li>• Executive oversight framework</li>
-                <li>• Cross-departmental steering committees</li>
-                <li>• Departmental coordinator network</li>
-                <li>• Community advisory integration</li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="font-semibold text-purple-700 mb-2">Process Design</h4>
-              <ul class="text-sm text-gray-700 space-y-1">
-                <li>• Pre-publication review workflows</li>
-                <li>• Multi-stage testing protocols</li>
-                <li>• Emergency communication procedures</li>
-                <li>• Remediation timeline standards</li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="font-semibold text-purple-700 mb-2">Implementation Planning</h4>
-              <ul class="text-sm text-gray-700 space-y-1">
-                <li>• Phased rollout timeline</li>
-                <li>• Training program structure</li>
-                <li>• Budget allocation framework</li>
-                <li>• Success metrics definition</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        <div class="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-xl">
-          <h3 class="text-xl font-semibold text-blue-800 mb-4">Vendor Relations & Procurement Strategy</h3>
-          <p class="text-gray-700 mb-4">
-            Analyzed accessibility vendor management challenges and developed diplomatic solutions for complex organizational dynamics affecting digital compliance initiatives.
-          </p>
-          
-          <div class="grid md:grid-cols-2 gap-6">
-            <div>
-              <h4 class="font-semibold text-purple-700 mb-2">Problem Analysis</h4>
-              <ul class="text-sm text-gray-700 space-y-1">
-                <li>• Vendor access and coordination barriers</li>
-                <li>• Internal vs. external responsibility mapping</li>
-                <li>• Communication breakdown identification</li>
-                <li>• Timeline and deliverable conflicts</li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="font-semibold text-purple-700 mb-2">Strategic Communications</h4>
-              <ul class="text-sm text-gray-700 space-y-1">
-                <li>• Stakeholder alignment strategies</li>
-                <li>• Diplomatic conflict resolution approaches</li>
-                <li>• Professional correspondence frameworks</li>
-                <li>• Escalation pathway development</li>
-              </ul>
-            </div>
-          </div>
+          <p class="text-gray-700 mb-4">Designed comprehensive digital accessibility initiative plan for municipal implementation, establishing governance structures, review processes, and compliance monitoring systems.</p>
         </div>
       </div>
-      
       <div class="mt-8 p-6 bg-gray-50 rounded-lg">
         <h3 class="text-lg font-semibold text-blue-800 mb-3">Strategic Impact</h3>
         <p class="text-gray-700">
@@ -337,144 +290,46 @@
       </div>
     </div>
   </section>
-  <section id="impact" class="max-w-6xl mx-auto px-4 py-16">
-    <div class="bg-white rounded-2xl shadow-xl p-8 floating-card">
-      <h2 class="text-3xl font-bold gradient-text mb-8 text-center">🔍 Technical Excellence in Action</h2>
-      
-      <div class="grid md:grid-cols-2 gap-12">
-        <div>
-          <h3 class="text-xl font-semibold text-blue-800 mb-4">Accessibility Annotations Example</h3>
-          <p class="text-gray-700 mb-4">
-            Here's how I implement trauma-informed design in this very portfolio:
-          </p>
-          
-          <div class="bg-gray-50 p-4 rounded-lg space-y-3 text-sm">
-            <div>
-              <strong class="text-purple-700">Cognitive Load Reduction:</strong>
-              <p class="text-gray-600">Sticky navigation with clear section labels prevents disorientation</p>
-            </div>
-            <div>
-              <strong class="text-purple-700">Choice & Control:</strong>
-              <p class="text-gray-600">Smooth scroll behavior respects user motion preferences</p>
-            </div>
-            <div>
-              <strong class="text-purple-700">Visual Safety:</strong>
-              <p class="text-gray-600">Gradient animations use reduced opacity to prevent overstimulation</p>
-            </div>
-            <div>
-              <strong class="text-purple-700">Screen Reader Optimization:</strong>
-              <p class="text-gray-600">All sections have proper landmarks and descriptive headings</p>
-            </div>
-          </div>
-        </div>
-        
-        <div>
-          <h3 class="text-xl font-semibold text-blue-800 mb-4">Technical Skills & Tools</h3>
-          
-          <div class="grid grid-cols-1 gap-4">
-            <div>
-              <h4 class="font-semibold text-purple-700 mb-2">Accessibility & Compliance</h4>
-              <ul class="text-sm text-gray-700 space-y-1">
-                <li>• WCAG 2.1/2.2, Section 508, ADA compliance</li>
-                <li>• Screen reader testing (JAWS, NVDA, VoiceOver)</li>
-                <li>• Document remediation & alt text optimization</li>
-                <li>• Trauma-informed design patterns</li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="font-semibold text-purple-700 mb-2">Testing & Development Tools</h4>
-              <ul class="text-sm text-gray-700 space-y-1">
-                <li>• axe DevTools, WAVE, Lighthouse, SiteImprove</li>
-                <li>• HTML/CSS, JavaScript (basic), ARIA implementation</li>
-                <li>• Figma, Adobe Creative Cloud, CMS platforms</li>
-                <li>• JIRA, GitHub, Azure DevOps, Agile methodologies</li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="font-semibold text-purple-700 mb-2">Healthcare & Government Systems</h4>
-              <ul class="text-sm text-gray-700 space-y-1">
-                <li>• Medicaid systems & pharmacy operations experience</li>
-                <li>• Provider enrollment & claims processing workflows</li>
-                <li>• Government compliance requirements</li>
-                <li>• Healthcare IT accessibility standards</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Portfolio Showcase -->
   <section id="portfolio" class="bg-gradient-to-r from-blue-50 to-purple-50 py-16">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl font-bold gradient-text mb-12 text-center">📁 Portfolio Showcase</h2>
+      <h2 class="text-3xl font-bold gradient-text mb-12 text-center">📁 Portfolio Showcase & Resources</h2>
       
-      <!-- Live Projects -->
       <div class="mb-12">
-        <h3 class="text-2xl font-semibold text-blue-800 mb-6">🎨 Live Projects</h3>
+        <h3 class="text-2xl font-semibold text-blue-800 mb-6 text-center">🎨 Live Projects & Prototypes</h3>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <a href="https://codepen.io/Rachel-Anyanwu/full/MYwQQeQ" target="_blank" 
-             class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow floating-card">
-            <h4 class="font-medium text-purple-700 mb-1">Stamford DEI Prototype</h4>
-            <p class="text-xs text-gray-600">Municipal accessibility framework</p>
-          </a>
-          <a href="https://lovable.dev/projects/32610dc3-1393-414f-9d51-12848e39c3f7" target="_blank" 
-             class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow floating-card">
-            <h4 class="font-medium text-purple-700 mb-1">Sis Q Radio</h4>
-            <p class="text-xs text-gray-600">Community radio platform</p>
-          </a>
-          <a href="https://uarcmgsv.manus.space/" target="_blank" 
-             class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow floating-card">
-            <h4 class="font-medium text-purple-700 mb-1">MANUS Rural Radio</h4>
-            <p class="text-xs text-gray-600">Accessible media site</p>
-          </a>
-          <a href="https://www.figma.com/proto/eNNYPF3Kt2F9xjZunBf5Cl/SisQradio-RuralRadio?node-id=1-2087&t=34tMIKp79Rc8thYm-1" target="_blank" 
-             class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow floating-card">
-            <h4 class="font-medium text-purple-700 mb-1">Figma Prototype</h4>
-            <p class="text-xs text-gray-600">UX design process</p>
-          </a>
+          <a href="https://codepen.io/Rachel-Anyanwu/full/MYwQQeQ" target="_blank" class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow floating-card"><h4 class="font-medium text-purple-700 mb-1">Stamford DEI Prototype</h4><p class="text-xs text-gray-600">Municipal accessibility framework</p></a>
+          <a href="https://lovable.dev/projects/32610dc3-1393-414f-9d51-12848e39c3f7" target="_blank" class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow floating-card"><h4 class="font-medium text-purple-700 mb-1">Sis Q Radio</h4><p class="text-xs text-gray-600">Community radio platform</p></a>
+          <a href="https://uarcmgsv.manus.space/" target="_blank" class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow floating-card"><h4 class="font-medium text-purple-700 mb-1">MANUS Rural Radio</h4><p class="text-xs text-gray-600">Accessible media site</p></a>
+          <a href="https://www.figma.com/proto/eNNYPF3Kt2F9xjZunBf5Cl/SisQradio-RuralRadio?node-id=1-2087&t=34tMIKp79Rc8thYm-1" target="_blank" class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow floating-card"><h4 class="font-medium text-purple-700 mb-1">Figma Prototype</h4><p class="text-xs text-gray-600">UX design process</p></a>
         </div>
       </div>
 
-      <!-- Key Documents -->
       <div class="bg-white rounded-xl shadow-lg p-8">
-        <h3 class="text-2xl font-semibold text-blue-800 mb-6">📄 Strategic Documents & Resources</h3>
-        
-        <div class="grid md:grid-cols-3 gap-6">
+        <h3 class="text-2xl font-semibold text-blue-800 mb-6 text-center">📄 Strategic Documents & Resources</h3>
+        <div class="grid md:grid-cols-3 gap-8">
           <div>
-            <h4 class="font-semibold text-purple-700 mb-3">🛠️ Implementation Tools</h4>
+            <h4 class="font-semibold text-purple-700 mb-3">📊 Assessment & Audit Reports</h4>
             <ul class="space-y-2 text-sm">
-              <li><a href="https://drive.google.com/file/d/12wNOPfTOyx8ipHDKoQ7X8j4JAILYdnZ_/view?usp=drive_link" 
-                     target="_blank" class="text-blue-600 hover:underline">Accessibility Essentials Infographic</a></li>
-              <li><a href="https://docs.google.com/document/d/1Tt-v9aHxW3Air1d3B7TVy-_rUuTtuLzc/edit?usp=drive_link" 
-                     target="_blank" class="text-blue-600 hover:underline">Manual Audit Template</a></li>
-              <li><a href="https://docs.google.com/document/d/1rGdN4ueRK4M_40PiuJNGBGcFvv6UGiIn/edit?usp=drive_link" 
-                     target="_blank" class="text-blue-600 hover:underline">3-Step Accessibility Checklist</a></li>
+              <li><a href="[YOUR GOOGLE DRIVE LINK HERE for Sanitized-Accessibility-Reports-for-AndiSites.pdf]" target="_blank" class="text-blue-700 hover:underline">Sanitized Audit & Remediation Report</a></li>
+              <li><a href="[LINK TO YOUR GOOGLE DOC: Comprehensive Website Assessment]" target="_blank" class="text-blue-700 hover:underline">Comprehensive Website Assessment</a></li>
+              <li><a href="[LINK TO YOUR GOOGLE DOC: Document Remediation Proposal]" target="_blank" class="text-blue-700 hover:underline">Document Remediation Proposal</a></li>
             </ul>
           </div>
-          
           <div>
-            <h4 class="font-semibold text-purple-700 mb-3">📊 Assessment Reports</h4>
+            <h4 class="font-semibold text-purple-700 mb-3">🎓 Training Guides & Materials</h4>
             <ul class="space-y-2 text-sm">
-              <li><a href="https://docs.google.com/document/d/1mrl5uhbO0yUrtS2D0imZ8mcS9MP1AhjP/edit?usp=drive_link" 
-                     target="_blank" class="text-blue-600 hover:underline">Comprehensive Website Assessment</a></li>
-              <li><a href="https://docs.google.com/document/d/1PGkJgZCsxeXreRHscShhDdx8rtdjurnW/edit?usp=drive_link" 
-                     target="_blank" class="text-blue-600 hover:underline">Document Remediation Proposal</a></li>
-              <li><a href="https://drive.google.com/file/d/1Xa0RIIaTgnjuzSnuVs5ciAoynQXmM6V2/view?usp=drive_link" 
-                     target="_blank" class="text-blue-600 hover:underline">Remediated Policy Document</a></li>
+              <li><a href="[LINK TO YOUR GOOGLE DOC: Understanding Digital Accessibility Roles]" target="_blank" class="text-blue-700 hover:underline">Guide: Understanding A11y Roles</a></li>
+              <li><a href="[LINK TO YOUR GOOGLE DOC: Inclusive Content Guide]" target="_blank" class="text-blue-700 hover:underline">Inclusive Content Guide (PPT)</a></li>
+               <li><a href="[LINK TO YOUR GOOGLE DOC: Vendor Training Guide]" target="_blank" class="text-blue-700 hover:underline">Vendor Training Guide</a></li>
             </ul>
           </div>
-          
           <div>
-            <h4 class="font-semibold text-purple-700 mb-3">🎓 Training Materials</h4>
+            <h4 class="font-semibold text-purple-700 mb-3">🛠️ Frameworks & Templates</h4>
             <ul class="space-y-2 text-sm">
-              <li><a href="https://docs.google.com/presentation/d/1_SgY1xhQ40edxc-dt2FapZ4-AnOA-XT0/edit?usp=drive_link" 
-                     target="_blank" class="text-blue-600 hover:underline">Inclusive Content Guide</a></li>
-              <li><a href="https://docs.google.com/document/d/1dq2yjcfo55mn0-IZPRpRMpUXf51yAsVt/edit?usp=drive_link" 
-                     target="_blank" class="text-blue-600 hover:underline">Vendor Training Guide</a></li>
-              <li><a href="https://docs.google.com/presentation/d/1rCNpux2C42mqntvaJZQkBUKzd-arrBwh/edit?usp=drive_link" 
-                     target="_blank" class="text-blue-600 hover:underline">UX Case Study Presentation</a></li>
+              <li><a href="[YOUR GOOGLE DRIVE LINK HERE for Website-Accessibility-Compliance-Checklist-TEMPLATE.docx]" target="_blank" class="text-blue-700 hover:underline">A11y Compliance Checklist Template</a></li>
+              <li><a href="[LINK TO YOUR GOOGLE DOC: Manual Audit Template]" target="_blank" class="text-blue-700 hover:underline">Manual Audit Template</a></li>
+              <li><a href="[LINK TO YOUR GOOGLE DOC: 3-Step Accessibility Checklist]" target="_blank" class="text-blue-700 hover:underline">3-Step Accessibility Checklist</a></li>
             </ul>
           </div>
         </div>
@@ -482,11 +337,51 @@
     </div>
   </section>
 
-  <!-- Credentials Section -->
+  <section id="skills" class="max-w-6xl mx-auto px-4 py-16">
+    <div class="bg-white rounded-2xl shadow-xl p-8 floating-card">
+      <h2 class="text-3xl font-bold gradient-text mb-12 text-center">🛠️ Technical Skills & Toolkit</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <h3 class="text-xl font-semibold text-blue-800 mb-4">Accessibility & Compliance</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li>✓ WCAG 2.1 / 2.2 (A, AA, AAA)</li>
+            <li>✓ Section 508 & ADA Compliance</li>
+            <li>✓ Screen Reader Testing (JAWS, NVDA, VO)</li>
+            <li>✓ PDF/UA & Document Remediation</li>
+            <li>✓ Trauma-Informed Design Principles</li>
+          </ul>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <h3 class="text-xl font-semibold text-blue-800 mb-4">Front-End & Design</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li>✓ HTML5</li>
+            <li>✓ CSS3 (inc. TailwindCSS)</li>
+            <li>✓ JavaScript (ES6)</li>
+            <li>✓ ARIA Implementation</li>
+            <li>✓ Figma & Adobe Creative Cloud</li>
+          </ul>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <h3 class="text-xl font-semibold text-blue-800 mb-4">Testing & Audit Tools</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li>✓ axe DevTools & Lighthouse</li>
+            <li>✓ WAVE (Web Accessibility Tool)</li>
+            <li>✓ SiteImprove Platform</li>
+            <li>✓ WebAIM Contrast Checker</li>
+            <li>✓ JIRA & Azure DevOps (ADO)</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
   <section id="credentials" class="max-w-6xl mx-auto px-4 py-16">
     <div class="bg-white rounded-2xl shadow-xl p-8 floating-card">
       <h2 class="text-3xl font-bold gradient-text mb-8 text-center">🎓 Education & Certifications</h2>
-      
       <div class="grid md:grid-cols-2 gap-8">
         <div>
           <h3 class="text-xl font-semibold text-blue-800 mb-4">Academic Foundation</h3>
@@ -496,7 +391,6 @@
             <p class="text-sm text-gray-600">Speech, Language, and Hearing Sciences</p>
           </div>
         </div>
-        
         <div>
           <h3 class="text-xl font-semibold text-blue-800 mb-4">Professional Certifications</h3>
           <ul class="space-y-2 text-sm text-gray-700">
@@ -509,7 +403,6 @@
           </ul>
         </div>
       </div>
-      
       <div class="mt-8 pt-6 border-t">
         <h3 class="text-xl font-semibold text-blue-800 mb-4">Community Recognition</h3>
         <div class="grid md:grid-cols-2 gap-4">
@@ -526,35 +419,39 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <section id="about" class="max-w-6xl mx-auto px-4 py-16">
+    <div class="bg-white rounded-2xl shadow-xl p-8 floating-card">
+      <h2 class="text-3xl font-bold gradient-text mb-8 text-center">👋 About Me</h2>
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+          My journey into digital accessibility wasn't a straight line—it was a calling. With a background in <strong>Speech, Language, and Hearing Sciences</strong>, my career began in clinical fields, focused on communication and helping people navigate sensory and cognitive challenges.
+        </p>
+        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+          I saw firsthand how critical clear communication and intuitive systems are. This passion led me from clinical practice to the digital world, where the same principles apply. Today, I bridge my clinical understanding of neurodiversity with the technical skills of UX design and accessibility.
+        </p>
+        <p class="text-lg text-gray-700 font-medium text-blue-800">
+          When I'm not auditing a site, you can find me exploring my Bronx neighborhood, always looking for new ways to build more inclusive communities, both online and off.
+        </p>
+      </div>
+    </div>
+  </section>
+
   <section id="contact" class="bg-gradient-to-r from-indigo-100 via-purple-50 to-pink-100 py-16">
     <div class="max-w-4xl mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold gradient-text mb-8">🌟 Let's Build Systems That Restore Trust</h2>
-      
       <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 floating-card">
-        <p class="text-lg text-gray-700 mb-6">
-          Ready to transform your digital systems with user experience and accessibility in mind?
-        </p>
-        
+        <p class="text-lg text-gray-700 mb-6">Ready to transform your digital systems with user experience and accessibility in mind?</p>
         <div class="space-y-4 mb-8">
-          <p class="text-gray-700">
-            📍 <strong>Based in Greater NY Metro Area</strong>
-          </p>
-          <p class="text-gray-700">
-            ✉️ <a href="mailto:Rachel.anyanwu@gmail.com" class="text-blue-600 hover:text-purple-600 font-medium">Rachel.anyanwu@gmail.com</a>
-          </p>
+          <p class="text-gray-700">📍 <strong>Based in Greater NY Metro Area</strong> • Open to Remote Opportunities</p>
+          <p class="text-gray-700">✉️ <a href="mailto:Rachel.Anyanwu@gmail.com" class="text-blue-700 hover:text-purple-600 font-medium">Rachel.Anyanwu@gmail.com</a></p>
         </div>
-        
         <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg">
-          <p class="text-gray-700 font-medium">
-            "Access is not a feature, it's a right. Let's center care in every interaction."
-          </p>
+          <p class="text-gray-700 font-medium">"Access is not a feature, it's a right. Let's center care in every interaction."</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="bg-white shadow-lg mt-10 p-6 text-center text-sm text-gray-600" role="contentinfo">
     <p>&copy; 2025 Rachel Anyanwu. Building inclusive systems that restore trust and center care.</p>
   </footer>
